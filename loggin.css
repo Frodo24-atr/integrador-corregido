@@ -1,0 +1,203 @@
+@import url(./assets/Tilt_Neon.zip);
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: url(contratar-electricista.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.form-box {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  background: #0000005b;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-box .logoimg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: absolute;
+  top: -80px;
+  left: -390px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.form-box h2 {
+  font-size: 23px;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.form-box .inputbox {
+  position: relative;
+  margin: 18px 0;
+  width: 310px;
+  border-bottom: 2px solid #fff;
+}
+
+.form-box .inputbox label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 1em;
+  pointer-events: none;
+  transition: top 0.3s ease, font-size 0.3s ease;
+}
+
+input[type="password"]:focus + label,
+input[type="password"]:not(:placeholder-shown) + label {
+  top: 0;
+  font-size: 14px;
+}
+
+input[type="email"]:focus + label,
+input[type="email"]:not(:placeholder-shown) + label {
+  top: 0;
+  font-size: 14px;
+}
+
+.form-box .inputbox input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 0 35px 0 5px;
+  color: #fff;
+}
+
+.form-box .inputbox {
+  position: relative;
+  display: inline-block;
+  right: auto;
+  left: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.logoimp {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+  width: 20px;
+  height: auto;
+}
+
+.inputbox input[type="password"] {
+  padding-right: 30px;
+}
+
+.form-box .forget {
+  margin: 20px 50px;
+  font-size: 0.9em;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-box .forget label input {
+  margin-right: 3px;
+}
+
+.form-box .forget label a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 60px;
+}
+
+.form-box .forget label a:hover {
+  text-decoration: underline;
+}
+
+button {
+  width: 75%;
+  height: 40px;
+  border-radius: 40px;
+  background: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+
+.form-box .register {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  margin: 14px 0 10px;
+}
+
+.form-box .register p a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.form-box .register p a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 760px) {
+  section {
+    min-height: 110vh;
+    width: 110%;
+  }
+
+  .form-box {
+    width: 340px;
+    height: 460px;
+  }
+
+  .form-box .logoimg {
+    left: 145px;
+  }
+
+  .form-box .inputbox {
+    left: 30px;
+    width: 80%;
+  }
+
+  .form-box .forget {
+    font-size: 12px;
+  }
+
+  .form-box .forget label a {
+    margin-left: 35px;
+  }
+
+  button {
+    margin-left: 40px;
+  }
+}
