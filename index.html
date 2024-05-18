@@ -23,7 +23,7 @@
         <ul class="navbar-list">
           <li><a href="#">Inicio</a></li>
           <li><a href="#about">Sobre nosotros</a></li>
-          <li><a href="#galeria">Productos y Servicios</a></li>
+          <li><a href="#galeria">Galeria de Trabajos</a></li>
           <li><a href="#contact">Contacto</a></li>
         </ul>
       </nav>
@@ -33,37 +33,37 @@
         <div class="hero-div1">
           <div class="hero-title">
             <h1>Mantenimiento del Hogar</h1>
-            <span>Seguridad y Trayectoria.</span>
+            <h2>Seguridad y Trayectoria.</h2>
+            <p>
+              En <span>MdH</span> Nos dedicamos
+              a mantener, mejorar y asegurar el bienestar de su hogar.
+            </p>
           </div>
-          <p>
-            En <span class="hero__pax">MyH</span> Nos dedicamos
-            a mantener, mejorar y asegurar el bienestar de su hogar.
-          </p>
-          <div class="hero_btns_container">
-            <div class="hero__btns hero-btn1">
-              <a href="#cards">SERVICIOS</a>
+          <div class="hero-btns-container">
+            <div class="hero-btn">
+              <a href="#cards" aria-label="Ir a Servicios">SERVICIOS</a>
             </div>
-            <div class="hero__btns hero-btn2">
-              <a href="./loggin.html">INICIAR</a>
+            <div class="hero-btn">
+              <a href="https://wa.link/lfrvge" aria-label="whatsapp">WHATSAPP</a>
             </div>
-            <div class="hero__btns hero-btn3">
-              <a href="./register.html">REGISTRARSE</a>
+            <div class="hero-btn">
+              <a href="https://aaieric.org.ar/costos-mano-de-obra" aria-label="Presupuestos">PRESUPUESTO</a>
             </div>
-          </div>
+          </div>          
         </div>
         <div class="hero__img">
-          <img src="contratar-electricista.jpg" alt="Mantenimiento Hogareño" />
+          <img src="icono-presentacion.png" alt="Mantenimiento Hogareño" />
         </div>
       </section>
       <section id="about">
         <h2 class="about__h2">Mantenimiento del Hogar</h2>
         <p class="about__p">
-          <span class="about__span">MyH:</span> Tu seguridad y tranquilidad son nuestra prioridad,
-           por eso, en MyH nos encargamos de que cada trabajo 
+          <span class="about__span">MdH:</span> Tu seguridad y tranquilidad son nuestra prioridad,
+           por eso, en MdH nos encargamos de que cada trabajo 
            realizado este a la altura de tus nececidades.
 
         </p>
-        <p>
+        <p class="about__p">
           Nuestro equipo de técnicos altamente calificados se especializa en
           resolver cada una de las situaciones con las que nos encontremos
           en su vivienda asegurando asi el bienestar de su familia.
@@ -77,39 +77,58 @@
         </p>
         <div class="cards-container">
           <div class="card">
-            <div class="card__img card_1"></div>
-            <h3>Reparación de Aires acondicionados</h3>
-            <p>
-              Desde la placa del equipo hasta la cañeria de gas,
-              nuestros tecnicos se encargaran de resolver cada problema
-              que pueda haber.
-            </p>
-          </div>
-          <div class="card">
-            <div class="card__img card_2"></div>
+            <img src="IMAGENES-SERVICIOS/electricistas.jpg" alt="">
             <h3>Tendido Electrico</h3>
             <p>
               Realizamos el tendido electrico para la alimentacion
-               de todo su hogar con respecto a tomacorrientes, iluminacion,
+              de todo su hogar con respecto a tomacorrientes, iluminacion,
               su ambiente de trabajo, etc.
             </p>
           </div>
           <div class="card">
-            <div class="card__img card_3"></div>
-            <h3>Reparacion de Heladeras</h3>
+            <img src="IMAGENES-SERVICIOS/muebles.jpg" alt="">
+            <h3>Instalacion y armado de Muebles</h3>
             <p>
-              La experiencia de nuestro equipo nos capacita tambien para 
-              la reparacion integra de sus equipos de refrigeracion hogareños, 
-              tanto freezers como heladeras convencionales.
+              Nos encargamos de la instalacion y el armado de muebles
+              para su hogar, oficina o comercio.
+            </p>
+          </div>
+          <div class="card">
+            <img src="IMAGENES-SERVICIOS/pintura.jpg" alt="">
+            <h3>Pintura de interiores</h3>
+            <p>
+              Realizamos trabajos de pintura en interiores, 
+              tanto en paredes como en techos, con la mejor calidad
+              y terminacion.
+            </p>
+          </div>
+          <div class="card">
+            <img src="IMAGENES-SERVICIOS/tablero electrico.jpg" alt="">
+            <h3>Armado de tableros electricos</h3>
+            <p>
+              Realizamos el armado de su tablero domiciliario, asegurando la seguridad de su hogar.
+            </p>
+          </div>
+          <div class="card">
+            <img src="IMAGENES-SERVICIOS/electrodomesticos.jpg" alt="">
+            <h3>Seguridad para sus Electrodomesticos</h3>
+            <p>
+              Todas las instalaciones electricas que realizamos cuentan
+              con la seguridad y calidad necesaria para el correcto funcionamiento de sus electrodomesticos. 
+            </p>
+          </div>
+          <div class="card">
+            <img src="IMAGENES-SERVICIOS/normativas.jpg" alt="">
+            <h3>Normativas ISO e IRAM</h3>
+            <p>
+              Trabajamos solo con materiales de primera calidad cumpliendo con todas
+              las normativas vigentes aseurando un estandar de calidad y seguridad.
             </p>
           </div>
         </div>
       </section>
       <section id="galeria">
         <h2 class="galeria_tittle">Galeria de trabajos</h2>
-        <p class="galeria_p">
-            Trabajos realizados.
-        </p>
         <div class="galery-container">
           <div class="item"></div>
           <div class="item"></div>
@@ -126,19 +145,18 @@
           <h2>Directorio</h2>
           <div class="sucursales">
             <div class="sucursal sucursal1">
-              <h3 class="sucursales__h4">Walter White</h3>
+              <h3 class="sucursales__h4">Electricista Domiciliario</h3>
               <ul class="sucursales__ul">
                 <li>
                   <img
                     class="icon_li"
-                    src="./iconos directorio/maps-and-flags.png"
-                    alt="Direccion"
-                  />
-                  Calle Falsa 123
+                    src="./iconos directorio/maps-and-flags.png" alt="Direccion"/>
+                  San Francisco Solano, Quilmes.
                 </li>
                 <li>
                   <img class="icon_li" src="./iconos directorio/email.png" alt="Email" />
-                  mailexample@gmail.com
+                  Gmail:
+                  <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGMTDrMthXvrrJJXhwGMGXrXztdsQZlJJlJzDRLpZwzqzmWtXBPwXnbBrxsRfmpWlZWbGSH">emafran2015@gmail.com</a>
                 </li>
                 <li>
                   <img
@@ -146,57 +164,35 @@
                     src="./iconos directorio/telephone.png"
                     alt="Celular"
                   />
-                  012 123456789
-                </li>
-              </ul>
-            </div>
-            <div class="sucursal sucursal2">
-              <h3 class="sucursales__h4">Jesse Pinkman 1759</h3>
-              <ul class="sucursales__ul">
-                <li>
-                  <img
-                    class="icon_li"
-                    src="./iconos directorio/maps-and-flags.png"
-                    alt="Direccion"
-                  />
-                  Skylar Fox 345
-                </li>
-                <li>
-                  <img class="icon_li" src="./iconos directorio/email.png" alt="Email" />
-                  WalterxJesse@gmail.com
-                </li>
-                <li>
-                  <img
-                    class="icon_li"
-                    src="./iconos directorio/telephone.png"
-                    alt="Celular"
-                  />
-                  013 123456789
+                  +54 9 11 5097-7425
                 </li>
               </ul>
             </div>
           </div>
           <div class="social">
-            <a href="https://www.facebook.com/" target="_blank"><img
+            <a href="https://www.facebook.com/franco.martinez.58118774" target="_blank"><img
                 src="./iconos redes sociales/facebook.png"
                 alt="Icono de facebook"
             /></a>
-            <a href="https://www.instagram.com/accounts/login/" target="_blank"
+            <a href="https://www.instagram.com/p/CyJp1UvPH9o/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank"
               ><img src="./iconos redes sociales/instagram.png" alt="Icono de instagram"
             /></a>
             <a href="https://twitter.com/?lang=en" target="_blank"
               ><img src="./iconos redes sociales/twitter.png" alt="Icono de twitter"
             /></a>
+            <a href="https://wa.link/lfrvge">
+              <img src="iconos redes sociales/whatsapp.png" alt="_blank">
+            </a>
           </div>
         </div>
         <div class="contact-map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.2013506939525!2d-58.1226507248336!3d-35.001664478622516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2c493a8c9466d%3A0x8d88e2e913923543!2sAluar!5e0!3m2!1sen!2sar!4v1706561064597!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31179.588808238714!2d-58.32835614344325!3d-34.77194921646577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32c65dac2c659%3A0xb95b765d35e8378d!2sSan%20Francisco%20Solano%2C%20Buenos%20Aires%20Province!5e0!3m2!1sen!2sar!4v1716010299543!5m2!1sen!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </section>
     </main>
     <footer>
       <img src="2.png" alt="Logo " />
-      <span>Copyright - Todos los derechos Reservados - Desarrollador Franco Emanuel Martinez</span>
+      <span>Desarrollador Franco Emanuel Martinez, 2023</span>
     </footer>
   </body>
 </html>
